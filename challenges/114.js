@@ -36,7 +36,11 @@
 // ```
 
 function flatten(array){
-    // your code here
+    let newArr=[];
+    for(let i=0;i<array.length;i++){
+      newArr=newArr.concat(array[i]);
+    } 
+    return newArr;
 }
 
 module.exports = flatten;
